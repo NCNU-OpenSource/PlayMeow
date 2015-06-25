@@ -333,6 +333,10 @@ public class step180 {
 ……………….
         motor.rotate(0.5);
 ```
+編譯每一個.java
+```
+sudo javac -classpath .:classes:/opt/pi4j/lib/'*' -d . step45.java
+```
 
 ##實作過程 － Coding(index.php)
 -index.php
