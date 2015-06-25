@@ -3,41 +3,32 @@
 by 1032 Practical Linux System Administration Final Report Group 8 - 吳 芷 恩 <100212067>
 
 For the Graphic Version, pls go to the following link:
-http://www.slideshare.net/NoelNg2/1032-practical-linux-system-administration-49811992
 
+[Slide](http://www.slideshare.net/NoelNg2/1032-practical-linux-system-administration-49811992)
 
+![PlayMeow](https://raw.githubusercontent.com/NCNU-OpenSource/PlayMeow/master/playmeow.png)
 
-##題目
-Playmeow<
-
-https://drive.google.com/file/d/0B6YjGdTpPRcZNGJRamhvWjA3T1E/view?usp=sharing
 
 ##題目發想緣起
-https://www.youtube.com/watch?v=Xa6ajRZU1ss
+[參考影片](https://www.youtube.com/watch?v=Xa6ajRZU1ss)
 
 ##實作所需材料
--材料,				取得來源,			價格
-
-1.Raspberry Pi,			BlueT,			$－－
-
-2.Logitech Webcam C310,		PChome,			$699
-
-3.Servo motor SG90,		Ruten,			$48
-
-4.Stepper motor 28BYJ-48-5V,	Ruten,			$50
-
-5.ULN2003 Driver Board,		Ruten,			$27
-
-6.Dupont Line,			Ruten,			$20
-
-7.Steel wire,			Hardware store,		$5
-
-8.Mouse toy,			DAISO,			$39
+				取得來源,			價格
+ 材料 | 取得來源 | 價格 
+------------ | ------------- | -------------
+Raspberry Pi|			BlueT|			$－－
+Logitech Webcam C310|		PChome|			$699
+Servo motor SG90|		Ruten|			$48
+Stepper motor 28BYJ-48-5V|	Ruten|			$50
+ULN2003 Driver Board|		Ruten|			$27
+Dupont Line|			Ruten|			$20
+Steel wire|			Hardware store|		$5
+Mouse toy|			DAISO|			$39
 
 ##運用與課程內容中相關的技巧
--Web server - LAMP
+- Web server - LAMP
 
--Automatically send ip to Email - Postfix
+- Automatically send ip to Email - Postfix
 
 ##使用的現有軟體與來源
 1.Stepper motor
@@ -102,13 +93,13 @@ $STREAMER_PATH/mjpg_streamer -i “input_uvc.so -y = YUYV” -o “output_http.s
 
 ##實作過程 － Coding (servo90.php & servo90.py)
 1.servo90.php
-```
+```php
 <?php
 echo shell_exec("sudo python servo90.py")
 ?>
 ```
 2.servo90.py
-```
+```python
 import RPi.GPIO as GPIO
 import time
 
@@ -135,13 +126,13 @@ GPIO.cleanup()
 
 ##實作過程 － Coding (servo180.php & servo180.py)
 1.servo180.php
-```
+```php
 <?php
 echo shell_exec("sudo python servo180.py")
 ?>
 ```
 2.servo180.py
-```
+```python
 import RPi.GPIO as GPIO
 import time
 
@@ -168,37 +159,37 @@ GPIO.cleanup()
 
 ##實作過程 － Coding (step45/-45/90/-90/180/-180.php)
 1.step45.php
-```
+```php
 <?php
 echo shell_exec("sudo java -classpath .:classes:/opt/pi4j/lib/'*' step45")
 ?>
 ```
 2.step-45.php
-```
+```php
 <?php
 echo shell_exec("sudo java -classpath .:classes:/opt/pi4j/lib/'*' stepm45")
 ?>
 ```
 3.step90.php
-```
+```php
 <?php
 echo shell_exec("sudo java -classpath .:classes:/opt/pi4j/lib/'*' step90")
 ?>
 ```
 4.step-90.php
-```
+```php
 <?php
 echo shell_exec("sudo java -classpath .:classes:/opt/pi4j/lib/'*' stepm90")
 ?>
 ```
 5.step180.php
-```
+```php
 <?php
 echo shell_exec("sudo java -classpath .:classes:/opt/pi4j/lib/'*' step180")
 ?>
 ```
 6.step-180.php
-```
+```php
 <?php
 echo shell_exec("sudo java -classpath .:classes:/opt/pi4j/lib/'*' stepm180")
 ?>
@@ -206,7 +197,7 @@ echo shell_exec("sudo java -classpath .:classes:/opt/pi4j/lib/'*' stepm180")
 
 ##實作過程 － Coding (step45.java)
 -step45.java
-```
+```java
 import com.pi4j.component.motor.impl.GpioStepperMotorComponent;
 import com.pi4j.io.gpio.GpioController;
 import com.pi4j.io.gpio.GpioFactory;
@@ -304,7 +295,7 @@ public class step45 {
 ##實作過程 － Coding(stepm45/90/m90/180/m180.java)
 change some code...
 1.stepm45.java
-```
+```java
 public class stepm45 {
 ……………….
         motor.rotate(-0.125);
@@ -340,7 +331,7 @@ sudo javac -classpath .:classes:/opt/pi4j/lib/'*' -d . step45.java
 
 ##實作過程 － Coding(index.php)
 -index.php
-```
+```php
 <html>
 <Iframe src="http://192.168.0.106:8080/javascript_simple.html" width="660" height="500"></Iframe>
 <p>toy control:
@@ -467,9 +458,9 @@ http://www.powenko.com/wordpress/?p=4324
 
 2.書籍：
 
--Raspberry Pi最佳入門與實戰應用 ， 柯博文 ， 碁峰 ，2015-01-08
+- Raspberry Pi最佳入門與實戰應用 ， 柯博文 ， 碁峰 ，2015-01-08
 
--Raspberry Pi超炫專案與完全實戰 ， 柯博文 ， 碁峰 ，2014-09-26
+- Raspberry Pi超炫專案與完全實戰 ， 柯博文 ， 碁峰 ，2014-09-26
 
 ##END
 THANK YOU !
