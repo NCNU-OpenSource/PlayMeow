@@ -2,9 +2,7 @@
 
 by 1032 Practical Linux System Administration Final Report Group 8 - 吳 芷 恩 <100212067>
 
-For the Graphic Version, pls go to the following link:
-
-[Slide](http://www.slideshare.net/NoelNg2/1032-practical-linux-system-administration-49811992)
+For the Graphic Version, pls go to the following link:[Slide](http://www.slideshare.net/NoelNg2/1032-practical-linux-system-administration-49811992)
 
 ![PlayMeow](https://raw.githubusercontent.com/NCNU-OpenSource/PlayMeow/master/playmeow.png)
 
@@ -13,7 +11,6 @@ For the Graphic Version, pls go to the following link:
 [參考影片](https://www.youtube.com/watch?v=Xa6ajRZU1ss)
 
 ##實作所需材料
-				取得來源,			價格
  材料 | 取得來源 | 價格 
 ------------ | ------------- | -------------
 Raspberry Pi|			BlueT|			$－－
