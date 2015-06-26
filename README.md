@@ -411,10 +411,10 @@ xmlhttp.send();
 ![s2](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(6).png)
 
 ##實際產出 - 試玩（改良前）
-[影片](https://www.youtube.com/watch?v=e_P9ZEpGHZU)
+[![影片](http://img.youtube.com/vi/e_P9ZEpGHZU/0.jpg)](http://www.youtube.com/watch?v=e_P9ZEpGHZU)
 
 ##實際產出 - 試玩 （改良後）
-[影片](https://www.youtube.com/watch?v=sksyBGeRKPU)
+[![影片](http://img.youtube.com/vi/sksyBGeRKPU/0.jpg)](http://www.youtube.com/watch?v=sksyBGeRKPU)
 
 ##實際產出 - Firefox
 ![firefox](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(7).png)
