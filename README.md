@@ -29,27 +29,27 @@ Mouse toy|			DAISO|			$39
 
 ##使用的現有軟體與來源
 1.Stepper motor
--software: [Pi4J] (http://pi4j.com/)
--[code](https://github.com/Pi4J/pi4j/blob/master/pi4j-example/src/main/java/StepperMotorGpioExample.java)
+- software: [Pi4J] (http://pi4j.com/)
+- [code](https://github.com/Pi4J/pi4j/blob/master/pi4j-example/src/main/java/StepperMotorGpioExample.java)
 
 2.Servo motor
--software: Python
--[code](https://www.youtube.com/watch?v=ddlDgUymbxc)
+- software: Python
+- [code](https://www.youtube.com/watch?v=ddlDgUymbxc)
 
 3.Webcam
--software: [MJPG-streamer](http://sourceforge.net/projects/mjpg-streamer/)
+- software: [MJPG-streamer](http://sourceforge.net/projects/mjpg-streamer/)
 
 4.Webpage
--software: LAMP
--code: HTML, [PHP](http://php.net/manual/en/function.shell-exec.php), JavaScript [AJAX](http://www.w3schools.com/ajax/ajax_example.asp)
+- software: LAMP
+- code: HTML, [PHP](http://php.net/manual/en/function.shell-exec.php), JavaScript [AJAX](http://www.w3schools.com/ajax/ajax_example.asp)
 
 ##實作過程 - GPIO 配置
 1.ULN2003 Driver Board (Stepper motor)
--pin 2,6,11,12,13,15
+- pin 2,6,11,12,13,15
 ![step](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration.png)
 
 2.Servo motor
--pin 4,7,20
+- pin 4,7,20
 ![servo](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(1).png)
 
 ##實作過程 - webcam
@@ -180,7 +180,7 @@ echo shell_exec("sudo java -classpath .:classes:/opt/pi4j/lib/'*' stepm180")
 ```
 
 ##實作過程 － Coding (step45.java)
--step45.java
+- step45.java
 ```java
 import com.pi4j.component.motor.impl.GpioStepperMotorComponent;
 import com.pi4j.io.gpio.GpioController;
@@ -277,7 +277,7 @@ public class step45 {
 ```
 
 ##實作過程 － Coding(stepm45/90/m90/180/m180.java)
-change some code...
+- change some code...
 1.stepm45.java
 ```java
 public class stepm45 {
@@ -308,13 +308,13 @@ public class step180 {
 ……………….
         motor.rotate(0.5);
 ```
-編譯每一個.java
+- 編譯每一個.java
 ```
 sudo javac -classpath .:classes:/opt/pi4j/lib/'*' -d . step45.java
 ```
 
 ##實作過程 － Coding(index.php)
--index.php
+- index.php
 ```php
 <html>
 <Iframe src="http://192.168.0.106:8080/javascript_simple.html" width="660" height="500"></Iframe>
@@ -383,37 +383,37 @@ xmlhttp.send();
 ##實作過程 - 困難與解決
 1.！在網頁上控制 伺服馬達＆步進馬達 ！
 
--以超連結控制會跳出新視窗      Noooooo~!!!
+- 以超連結控制會跳出新視窗      Noooooo~!!!
 
--Helper - RichEGG
+- Helper - RichEGG
 
--RichEGG : 改用AJAX ~
+- RichEGG : 改用AJAX ~
 
 2.！在沒有Public ip、路由器不是自己的情況下，從外部開啟控制網頁！
 
--DDNS 無法設定      Noooooo~!!!
+- DDNS 無法設定      Noooooo~!!!
 
--以3G行動網卡代替      ＄_＄不是長遠之計
+- 以3G行動網卡代替      ＄_＄不是長遠之計
 
--Helper - BlueT
+- Helper - BlueT
 
--BlueT : 可以用ssh 或vpn解決， 到 ipv6 普及就沒有這個問題了～
+- BlueT : 可以用ssh 或vpn解決， 到 ipv6 普及就沒有這個問題了～
 
--ssh reverse tunnel       需要額外一台有Public ip的機器=.=
+- ssh reverse tunnel       需要額外一台有Public ip的機器=.=
 
--VPN     綁定裝置以外的裝置會無法使用 T_T
+- VPN     綁定裝置以外的裝置會無法使用 T_T
 
--無解 >_<....
+- 無解 >_<....
 
 ##實際產出 - 外觀
 ![s1](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(5).png)
-![s2}(https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(6).png)
+![s2](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(6).png)
 
 ##實際產出 - 試玩（改良前）
 [影片](https://www.youtube.com/watch?v=e_P9ZEpGHZU)
 
 ##實際產出 - 試玩 （改良後）
-[影片]https://www.youtube.com/watch?v=sksyBGeRKPU
+[影片](https://www.youtube.com/watch?v=sksyBGeRKPU)
 
 ##實際產出 - Firefox
 ![firefox](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(7).png)
@@ -433,17 +433,15 @@ xmlhttp.send();
 
 ##參考資料
 1.網頁：
-http://www.w3schools.com
-https://www.youtube.com/watch?v=ddlDgUymbxc
-http://www.codedata.com.tw/java/java-embedded-10-gpio-motor
-http://www.ntex.tw/wordpress/545.html
-https://sites.google.com/site/raspberypishare0918/
-http://www.powenko.com/wordpress/?p=4324
+- http://www.w3schools.com
+- https://www.youtube.com/watch?v=ddlDgUymbxc
+- http://www.codedata.com.tw/java/java-embedded-10-gpio-motor
+- http://www.ntex.tw/wordpress/545.html
+- https://sites.google.com/site/raspberypishare0918/
+- http://www.powenko.com/wordpress/?p=4324
 
 2.書籍：
-
 - Raspberry Pi最佳入門與實戰應用 ， 柯博文 ， 碁峰 ，2015-01-08
-
 - Raspberry Pi超炫專案與完全實戰 ， 柯博文 ， 碁峰 ，2014-09-26
 
 ##END
