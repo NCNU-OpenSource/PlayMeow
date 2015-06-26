@@ -8,7 +8,8 @@ For the Graphic Version, pls go to the following link:[Slide](http://www.slidesh
 
 
 ##題目發想緣起
-[參考影片](https://www.youtube.com/watch?v=Xa6ajRZU1ss)
+
+[![參考影片](https://www.youtube.com/watch?v=Xa6ajRZU1ss)](https://www.youtube.com/watch?v=Xa6ajRZU1ss)
 
 ##實作所需材料
  材料 | 取得來源 | 價格 
