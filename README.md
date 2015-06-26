@@ -29,44 +29,31 @@ Mouse toy|			DAISO|			$39
 
 ##使用的現有軟體與來源
 1.Stepper motor
-
--software: Pi4J http://pi4j.com/
-
--code:https://github.com/Pi4J/pi4j/blob/master/pi4j-example/src/main/java/StepperMotorGpioExample.java
+-software: [Pi4J] (http://pi4j.com/)
+-[code](https://github.com/Pi4J/pi4j/blob/master/pi4j-example/src/main/java/StepperMotorGpioExample.java)
 
 2.Servo motor
-
 -software: Python
-
--code:https://www.youtube.com/watch?v=ddlDgUymbxc
+-[code](https://www.youtube.com/watch?v=ddlDgUymbxc)
 
 3.Webcam
-
--software: MJPG-streamer http://sourceforge.net/projects/mjpg-streamer/
+-software: [MJPG-streamer](http://sourceforge.net/projects/mjpg-streamer/)
 
 4.Webpage
-
 -software: LAMP
-
--code: HTML, PHP, JavaScript AJAX (http://php.net/manual/en/function.shell-exec.php) 
-
-(http://www.w3schools.com/ajax/ajax_example.asp)
+-code: HTML, [PHP](http://php.net/manual/en/function.shell-exec.php), JavaScript [AJAX](http://www.w3schools.com/ajax/ajax_example.asp)
 
 ##實作過程 - GPIO 配置
 1.ULN2003 Driver Board (Stepper motor)
-
 -pin 2,6,11,12,13,15
-
-(https://drive.google.com/file/d/0B6YjGdTpPRcZMHgyWUJscTY4Nkk/view?usp=sharing)
+![step](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration.png)
 
 2.Servo motor
-
 -pin 4,7,20
-
-(https://drive.google.com/file/d/0B6YjGdTpPRcZZFJoREpvTWdqYjQ/view?usp=sharing)
+![servo](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(1).png)
 
 ##實作過程 - webcam
-https://drive.google.com/file/d/0B6YjGdTpPRcZenVRX2FWWUZWMzA/view?usp=sharing
+![webcam](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(2).png)
 
 ##實作過程 － MJPG-streamer
 1.Builds MJPG-streamer
@@ -390,8 +377,8 @@ xmlhttp.send();
 ```
 
 ##實作過程 
-https://drive.google.com/file/d/0B6YjGdTpPRcZYUkxUFh0QlNOODQ/view?usp=sharing
-https://drive.google.com/file/d/0B6YjGdTpPRcZLUtJV3Zmc2dsOW8/view?usp=sharing
+![1](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(3).png)
+![2](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(4).png)
 
 ##實作過程 - 困難與解決
 1.！在網頁上控制 伺服馬達＆步進馬達 ！
@@ -419,29 +406,29 @@ https://drive.google.com/file/d/0B6YjGdTpPRcZLUtJV3Zmc2dsOW8/view?usp=sharing
 -無解 >_<....
 
 ##實際產出 - 外觀
-https://drive.google.com/file/d/0B6YjGdTpPRcZb2ZHTGRFc2hKck0/view?usp=sharing
-https://drive.google.com/file/d/0B6YjGdTpPRcZVVBfc2dmQ0U1a2M/view?usp=sharing
+![s1](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(5).png)
+![s2}(https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(6).png)
 
 ##實際產出 - 試玩（改良前）
-https://www.youtube.com/watch?v=e_P9ZEpGHZU
+[影片](https://www.youtube.com/watch?v=e_P9ZEpGHZU)
 
 ##實際產出 - 試玩 （改良後）
-https://www.youtube.com/watch?v=sksyBGeRKPU
+[影片]https://www.youtube.com/watch?v=sksyBGeRKPU
 
 ##實際產出 - Firefox
-https://drive.google.com/file/d/0B6YjGdTpPRcZZzZMdzduWnRwYjA/view?usp=sharing
+![firefox](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(7).png)
 
 ##實際產出 - Safari
-https://drive.google.com/file/d/0B6YjGdTpPRcZMjk5MkFIeGVGZ0U/view?usp=sharing
+![safari](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(8).png)
 
 ##實際產出 - Chrome
-https://drive.google.com/file/d/0B6YjGdTpPRcZSnAxMEkxWFFoa2c/view?usp=sharing
+![chrome](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(9).png)
 
 ##實際產出 - ipad safari
-https://drive.google.com/file/d/0B6YjGdTpPRcZSE8xUTZCYkwtX1E/view?usp=sharing
+![ipad](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(10).png)
 
 ##實際產出 - smartphone chrome
-https://drive.google.com/file/d/0B6YjGdTpPRcZSTBzNmZYb3NzaW8/view?usp=sharing
+![smartphone](https://github.com/NCNU-OpenSource/PlayMeow/raw/master/img/1032%20Practical%20Linux%20System%20Administration%20(11).png)
 
 
 ##參考資料
